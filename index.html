@@ -17,7 +17,7 @@
   <div class="card">
     <h1>📩 A Letter For You</h1>
     <p>Tap to open</p>
-    <button onclick="nextPage(2)">Open</button>
+    <button class="start-btn" onclick="nextPage(2); startMusic()">Open Letter</button>
   </div>
 </div>
 
@@ -103,7 +103,8 @@
 </div>
 
 <!-- MUSIC -->
-<audio id="bgm" src="Ravyn Lenae - Love Me Not (Piano Cover).mp3" loop></audio>
+<audio id="bgm" src="Ravyn Lenae - Love Me Not (Piano Cover).mp3" loop preload="auto"></audio>
+
 
 <script src="script.js"></script>
 </body>
