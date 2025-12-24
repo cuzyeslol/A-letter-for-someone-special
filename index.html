@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A letter for someone.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- VIDEO BACKGROUND -->
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="snow.mp4" type="video/mp4">
+</video>
+
+<!-- PAGE 1 -->
+<div class="page show" id="page1">
+  <div class="card">
+    <h1>📩 A Letter For You</h1>
+    <p>Tap to open</p>
+    <button onclick="nextPage(2)">Open</button>
+  </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <div class="card">
+    <h1>Hello You ❤️</h1>
+    <p>This letter is for my special person.</p>
+    <div class="nav">
+      <button onclick="prevPage(1)">← Back</button>
+      <button onclick="nextPage(3)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <div class="card">
+    <h1>Dear Someone Special</h1>
+    <p>
+      Tahun ini tidak akan terasa sama tanpamu.<br><br>
+      Terima kasih telah menjadi penghibur dan senyum favoritku.
+      Setiap tawa spontan, setiap momen aneh, setiap kenangan kecil 
+      semuanya aku simpan dengan tenang di hatiku.
+    </p>
+    <div class="nav">
+      <button onclick="prevPage(2)">← Back</button>
+      <button onclick="nextPage(4)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+  <div class="card">
+    <h1>My Wish For You ✨</h1>
+    <p>
+      Aku berharap kamu bahagia dalam hal-hal kecil,
+      kedamaian di hari-hari sibukmu,
+      dan senyum yang muncul secara alami
+      karena kamu pantas mendapatkan semua itu.
+    </p>
+    <div class="nav">
+      <button onclick="prevPage(3)">← Back</button>
+      <button onclick="nextPage(5)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+  <div class="card">
+    <h1>My thoughts</h1>
+    <p>
+      Kamu sangat berarti bagiku, lebih dari yang kamu tahu.
+      Dan aku sangat senang kamu ada di tahunku ini ❤️
+    </p>
+    <div class="nav">
+      <button onclick="prevPage(4)">← Back</button>
+      <button onclick="nextPage(6)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="page6">
+  <div class="card">
+    <h1>Coming to an end...</h1>
+    <p>
+      Sayang sekali tapi setiap permulaan memiliki akhir, seperti tahun ini dan surat ini.
+    </p>
+
+    <div class="big-quote">
+      “Dont be sad it ended, Be happy it happened”
+    </div>
+    <p>Terimakasih telah membaca.</p>
+
+    <p class="sign">— A</p>
+    <div class="nav">
+      <button onclick="prevPage(5)">← Back</button>
+    </div>
+  </div>
+</div>
+
+<!-- MUSIC -->
+<audio id="bgm" src="Ravyn Lenae - Love Me Not (Piano Cover).mp4" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
