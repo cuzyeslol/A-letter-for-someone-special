@@ -23,6 +23,14 @@ function prevPage(n){
   showPage(n);
 }
 
+function startMusic(){
+  let audio = document.getElementById("bgm");
+  audio.volume = 0;
+  audio.play();
+  fadeInMusic();
+}
+
+
 function fadeInMusic(){
   const audio = document.getElementById("bgm");
   let v = 0;
